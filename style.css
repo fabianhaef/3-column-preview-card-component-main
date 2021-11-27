@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --right-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --gray: hsl(0, 0%, 95%);
+}  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 24px 0;
+}
+
+.article {
+  width: 330px;
+  padding: 50px;
+  margin: 0 24px;
+}
+
+.article:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.article:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.article:nth-child(2) {
+  margin: 0 24px;
+}
+
+.article-title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 36px;
+  line-height: calc(36px * 1.618);
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+
+.article-paragraph {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15;
+  line-height: calc(15px * 1.618);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.icon-box {
+  margin-bottom: 1.5rem;
+}
+.sedan {
+  background-color: var(--right-orange);
+}
+
+.suv {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+}
+
+.btn {
+  border-radius: 50px;
+  border: 1px solid var(--gray);
+  background-color: var(--gray);
+
+  font-size: 15px;
+  padding: 1rem 2rem;
+}
+
+
+.btn-sedan {
+  color: var(--right-orange);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.btn-suv {
+  color: var(--dark-cyan);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn-luxury {
+  color: var(--very-dark-cyan);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn-sedan:hover {
+  background-color: var(--right-orange);
+  border: 1px solid var(--gray);
+  color: var(--white);
+}
+
+.btn-suv:hover {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+}
+
+.btn-luxury:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .main {
+    display: flex;
+    margin: 0;
+  }
+
+
+  .article:first-child {
+    border-radius: 10px 0 0 10px;
+    margin-right: 0;
+  }
+
+  .article:last-child {
+    margin-left: 0;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .article:nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
